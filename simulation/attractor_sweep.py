@@ -95,6 +95,19 @@ def aggregate_basin_volume(results: np.ndarray) -> np.ndarray:
     return vols
 
 
+def basin_volumes_at_beta(beta: float, grid_size: int = 11) -> np.ndarray:
+    """Aggregate basin volumes over the 4D grid at a given inverse temperature.
+    Used to substantiate the robustness-of-basin-geometry claim in the paper."""
+    grid = np.linspace(0.0, 1.0, grid_size)
+    out = np.zeros((grid_size, grid_size, grid_size, grid_size, len(ATTRACTORS)))
+    for i, v in enumerate(grid):
+        for j, t in enumerate(grid):
+            for k, e in enumerate(grid):
+                for m, l in enumerate(grid):
+                    out[i, j, k, m] = basin_fractions(v, t, e, l, beta)
+    return aggregate_basin_volume(out)
+
+
 def slice_violence_effect(grid_size: int = 21) -> Dict[str, List[float]]:
     """Hold (transport, energy, literacy) fixed at favourable capitalist
     values; sweep violence from 0 to 1 and report each attractor's basin

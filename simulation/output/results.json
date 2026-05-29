@@ -224,6 +224,38 @@
       }
     }
   },
+  "beta_robustness": {
+    "beta_5": {
+      "kin_commons": 0.10340823714227171,
+      "warlord_tribute": 0.1042961546342463,
+      "neo_feudal": 0.2493682125537873,
+      "monastic": 0.10914555016733829,
+      "guild_merchant": 0.10088108735742093,
+      "state_command": 0.1836623181476675,
+      "capitalist": 0.030803906836964687,
+      "commons_federation": 0.11843453316030325
+    },
+    "beta_12": {
+      "kin_commons": 0.10340823714227171,
+      "warlord_tribute": 0.1042961546342463,
+      "neo_feudal": 0.2493682125537873,
+      "monastic": 0.10914555016733829,
+      "guild_merchant": 0.10088108735742093,
+      "state_command": 0.1836623181476675,
+      "capitalist": 0.030803906836964687,
+      "commons_federation": 0.11843453316030325
+    },
+    "beta_20": {
+      "kin_commons": 0.10340823714227171,
+      "warlord_tribute": 0.1042961546342463,
+      "neo_feudal": 0.2492999112082508,
+      "monastic": 0.10914555016733829,
+      "guild_merchant": 0.10094938870295744,
+      "state_command": 0.183594016802131,
+      "capitalist": 0.030803906836964687,
+      "commons_federation": 0.11850283450583976
+    }
+  },
   "violence_slice": {
     "grid": [
       0.0,

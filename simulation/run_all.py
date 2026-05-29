@@ -16,6 +16,7 @@ from attractor_sweep import (
     ATTRACTORS,
     aggregate_basin_volume,
     basin_fractions,
+    basin_volumes_at_beta,
     slice_violence_effect,
     sweep,
 )
@@ -82,6 +83,12 @@ def main() -> None:
         "grid_size": grid_size,
         "n_cells": grid_size ** 4,
         "basin_volumes": fmt_basin(vols),
+    }
+
+    # Robustness of the basin geometry to the Boltzmann sharpness beta
+    results["beta_robustness"] = {
+        f"beta_{int(b)}": fmt_basin(basin_volumes_at_beta(b, grid_size))
+        for b in (5.0, 12.0, 20.0)
     }
 
     # Selected scenario points (chosen to illustrate the propositions)
