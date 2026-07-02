@@ -34,3 +34,13 @@ Scope contract:
 
 Next-pass candidates (logged): calibrate fitness functions against a corpus of
 post-collapse trajectories; continuous-stalk extension.
+
+---
+
+## 2026-07-02 — reform pass (de-formalize + de-template)
+
+Corpus reform. The paper's honesty was already exemplary: §2.3 and §4 openly concede that sheaf cohomology is inert on the only worked example (the residual dim H1=1 is the cycle's topological Betti number, not an institutional obstruction) and that the elementary empty-intersection set E_b does the existence work, with the genuinely-cohomological contextuality case flagged as future work. Targets were the two formalistic tells.
+
+- paper/PAPER.md §6: retitled "Three propositions" -> "What the Construction Entails" and demoted the three `\begin{proposition}` boxes to bold-led prose claims. The paper already stated these are "consequences of the construction," not theorems; presenting admitted non-theorems in proposition environments was ornate formalism, so the boxing is removed while every claim and number is kept. The §2.3 Lemma [Minimum repair localisation] has a genuine contrapositive proof that does real analytic work (it explains why the safe-conduct treaty fails) and is kept, as are the two Definitions.
+- paper/PAPER.md §7: retitled "What the model does not do" -> "The Coarseness of the Instrument" (house-vocabulary limits-ledger title; content of honest scoping kept). Updated two lingering "proposition" references to "claim".
+- Verify: 0 `\begin{proposition}` remain (lemma + 2 definitions kept); voice 0 errors; refs 0 missing/0 unused; claims unchanged from baseline (pre-existing percent-vs-fraction no-matches, none introduced); check => PASS; synced.
